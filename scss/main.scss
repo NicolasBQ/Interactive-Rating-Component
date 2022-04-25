@@ -1,0 +1,70 @@
+@import './config';
+@import './card';
+
+body {
+    font-family: $main-font;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $very-dark-blue;
+}
+
+// TEXT COLOR //
+.white-text {
+    color: $white;
+}
+
+.grey-text {
+    color: $medium-grey;
+}
+
+.accent-text {
+    color: $accent-color;
+}
+
+//FONT SIZE //
+.display-font {
+    font-size: 1.5rem;
+}
+
+.text-font {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+// FONT WEIGHT //
+.font-400 {
+    font-weight: 400;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+// MARGIN //
+
+.margin-bottom-16 {
+    margin-bottom: 1rem;
+}
+
+.margin-bottom-32 {
+    margin-bottom: 2rem;
+}
+
+// CICLES //
+
+.circle-container {
+    width: clamp(2.5rem, 5vw, 3rem);
+    height: clamp(2.5rem, 5vw, 3rem);
+    border-radius: 50%;
+    background-color: $medium-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__selected {
+        background-color: $accent-color;
+        color: $white;
+    }
+}

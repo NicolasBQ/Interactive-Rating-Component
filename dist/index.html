@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Interactive Rating Component</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="main-rating">
+        <div class="main-rating__star margin-bottom-32 circle-container">
+          <img src="../dist/img/icon-star.svg" alt="Star Icon" />
+        </div>
+
+        <div class="margin-bottom-32">
+          <h1 class="white-text display-font font-700 margin-bottom-16">
+            How did we do?
+          </h1>
+          <p class="grey-text text-font font-400">
+            Please let us know how we did you support request. All feedback is
+            appreciated to help us improve our offering!
+          </p>
+        </div>
+
+        <div class="main-rating__numbers margin-bottom-32">
+          <div
+            class="grey-text text-font font-700 circle-container"
+            data-rate-button
+          >
+            1
+          </div>
+          <div
+            class="grey-text text-font font-700 circle-container"
+            data-rate-button
+          >
+            2
+          </div>
+          <div
+            class="grey-text text-font font-700 circle-container"
+            data-rate-button
+          >
+            3
+          </div>
+          <div
+            class="grey-text text-font font-700 circle-container"
+            data-rate-button
+          >
+            4
+          </div>
+          <div
+            class="grey-text text-font font-700 circle-container"
+            data-rate-button
+          >
+            5
+          </div>
+        </div>
+
+        <button class="main-rating__button white-text font-text">SUBMIT</button>
+      </div>
+
+      <div class="main-thanks">
+        <div>
+          <img
+            src="../dist/img/illustration-thank-you.svg"
+            alt="Thank you illustration"
+          />
+
+          <div>
+            <p class="accent-text text-font">
+              You selected <span></span> out of 5
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="white-text display-font">Thank you!</h1>
+          <p class="grey-text text-font">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't gesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>

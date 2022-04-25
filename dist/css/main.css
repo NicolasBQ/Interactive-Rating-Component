@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 80%;
+  max-width: 25rem;
+  padding: 1.5rem 2rem;
+  background-color: #171E28;
+  border-radius: 1.5rem;
+}
+
+.main-rating__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-rating__numbers > *:hover {
+  background-color: #959eac;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.main-rating__numbers-selected {
+  background-color: #fb7413;
+  color: #ffffff;
+}
+
+.main-rating__button {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  background-color: #fb7413;
+  color: #ffffff;
+  letter-spacing: 2px;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.main-rating__button:hover {
+  background-color: #ffffff;
+  color: #fb7413;
+}
+
+.main-thanks {
+  display: none;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #121417;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.grey-text {
+  color: #7c8798;
+}
+
+.accent-text {
+  color: #fb7413;
+}
+
+.display-font {
+  font-size: 1.5rem;
+}
+
+.text-font {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-32 {
+  margin-bottom: 2rem;
+}
+
+.circle-container {
+  width: clamp(2.5rem, 5vw, 3rem);
+  height: clamp(2.5rem, 5vw, 3rem);
+  border-radius: 50%;
+  background-color: #262F38;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle-container__selected {
+  background-color: #fb7413;
+  color: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */

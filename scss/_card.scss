@@ -1,0 +1,46 @@
+.main {
+    width: 80%;
+    max-width: 25rem;
+    padding: 1.5rem 2rem;
+    background-color: $dark-blue;
+    border-radius: 1.5rem;
+
+    &-rating {
+        &__numbers {
+            display: flex;
+            justify-content: space-between;
+
+            & > *:hover {
+                background-color: $light-grey;
+                color: $white;
+                cursor: pointer;
+            }
+
+            &-selected {
+                background-color: $accent-color;
+                color: $white;
+            }
+        }
+
+        &__button {
+            padding: 1rem;
+            width: 100%;
+            border: none;
+            background-color: $accent-color;
+            color: $white;
+            letter-spacing: 2px;
+            border-radius: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $white;
+                color: $accent-color;
+            }
+        }
+    }
+
+    &-thanks {
+        display: none;
+    }
+}
