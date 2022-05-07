@@ -1,7 +1,7 @@
 .main {
     width: 80%;
     max-width: 25rem;
-    padding: 1.5rem 2rem;
+    padding: 2rem 2rem;
     background-color: $dark-blue;
     border-radius: 1.5rem;
 
@@ -10,11 +10,14 @@
             display: flex;
             justify-content: space-between;
 
-            & > *:hover {
-                background-color: $light-grey;
-                color: $white;
-                cursor: pointer;
+            @include for-laptop-up {
+                & > *:hover {
+                    background-color: $light-grey;
+                    color: $white;
+                    cursor: pointer;
+                }
             }
+
 
             &-selected {
                 background-color: $accent-color;
@@ -32,15 +35,35 @@
             border-radius: 1.5rem;
             font-weight: 700;
             cursor: pointer;
-
+            
             &:hover {
                 background-color: $white;
                 color: $accent-color;
             }
+            
         }
     }
-
+    
     &-thanks {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__rating {
+            padding: 0.3rem 1rem;
+            background-color: $medium-blue;
+            border-radius: 1rem;
+        }
+
+
+        &__text {
+            text-align: center;
+        }
     }
 }
+
+.card-disable {
+    display: none;
+}
+

@@ -19,3 +19,8 @@ $accent-color: 	#fb7413;
     padding: 0;
 }
 
+@mixin for-laptop-up {
+    @media screen and (min-width: 60em) {
+        @content;
+    }
+}
